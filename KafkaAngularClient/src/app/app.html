@@ -1,0 +1,19 @@
+<div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+  <h2>מערכת שליטה ובקרה - קפקא ב-Docker 🐋</h2>
+  
+  <div style="margin: 15px;">
+    <label>שם החיישן: </label>
+    <input [(ngModel)]="sensorId" type="text" style="padding: 5px;"/>
+  </div>
+
+  <div style="margin: 15px;">
+    <label>טמפרטורה: </label>
+    <input [(ngModel)]="temperature" type="number" style="padding: 5px;"/>
+  </div>
+
+  <button (click)="sendToBackend()" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer; font-weight: bold;">
+    שלח ל-Web API
+  </button>
+
+  <p style="margin-top: 20px; font-size: 18px; color: #007bff;">{{ statusText }}</p>
+</div>
