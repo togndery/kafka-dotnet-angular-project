@@ -1,0 +1,6 @@
+@KafkaBackend_HostAddress = http://localhost:5136
+
+GET {{KafkaBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
